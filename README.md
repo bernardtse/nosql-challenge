@@ -11,11 +11,10 @@
 #### - Add 1 document (Penang Flavours)
 #### - Add missing data.
 #### - Convert data type
-###
-###
+##
 ## NoSQL_analysis.ipynb
 #### Part 3: Exploratory Analysis
-#### - Answer the following 4 questions:
+#### Answer the following 4 questions:
 ##### 1. Which establishments have a hygiene score equal to 20?
 ##### 2. Which establishments in London have a RatingValue greater than or equal to 4?
 ##### 3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
