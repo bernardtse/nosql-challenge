@@ -12,10 +12,11 @@ UK Food Hygiene Rating Analysis
 ## 1. Overview
 The UK Food Standards Agency assesses food hygiene ratings for establishments across the United Kingdom. This project analyses data from the agency to help journalists at *Eat Safe, Love* identify key insights for articles. The analysis is carried out using MongoDB and Jupyter Notebooks, focusing on data manipulation, updates, and exploratory queries.
 
+![MongoDB](images/mongodb.png)
 
 ## 2. Repository
 The repository includes:
-- **Data**: `Resources/establishments.json` file containing the dataset.
+- **Data**: `resources/establishments.json` file containing the dataset.
 - **Setup Notebook**: [`NoSQL_setup.ipynb`](NoSQL_setup.ipynb) for database setup and data cleaning.
 - **Analysis Notebook**: [`NoSQL_analysis.ipynb`](NoSQL_analysis.ipynb) for exploratory data analysis.
 
@@ -23,12 +24,21 @@ The repository includes:
 
 ### General Instructions
 1. Ensure that the necessary Python libraries (`pymongo`, `pprint`, `pandas`) are installed on your system.
-2. Download the repository.
-3. Open and run the notebooks (`NoSQL_setup.ipynb` and `NoSQL_analysis.ipynb`) in Jupyter Notebook.
+2. Ensure that MongoDB is installed.
+3. Download the repository.
+4. Open and run the notebooks (`NoSQL_setup.ipynb` and `NoSQL_analysis.ipynb`) in Jupyter Notebook.
 
 ### `NoSQL_setup.ipynb`
 #### Part 1: Database and Jupyter Notebook Set Up
 1. Import the data from the `establishments.json` file into MongoDB.
+   - In the terminal, navigate to the folder that contains `establishment.json`. If the folder is `resources/`, type the following command:
+   ```
+   cd resources
+   ```
+   - Type the following command to import the data provided in the `establishments.json`. The database is named `uk_food` and the collection is named `establishments`.
+   ```
+   mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json
+   ```
 2. Ensure database and collection setup is complete, with verification steps.
 
 #### Part 2: Update the Database
@@ -41,7 +51,7 @@ The repository includes:
 Perform the data analysis to answer specific questions outlined in the next section.
 
 ## 4. Analysis
-The following questions were answered in the Analysis Notebook `NoSQL_analysis.ipynb`:
+The following questions were answered in the Analysis Notebook [`NoSQL_analysis.ipynb`](NoSQL_analysis.ipynb):
 
 1. Which establishments have a hygiene score equal to 20?
 
@@ -58,6 +68,8 @@ The following questions were answered in the Analysis Notebook `NoSQL_analysis.i
 4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
 
    **Hygiene Score by Authority**: Counting establishments with a hygiene score of 0 by local authority reveals areas with significant issues and potential focus for food safety improvements.
+
+![Query](images/query.png)
 
 ## 5. Reference & Credits
 - **Dataset**: Provided by the UK Food Standards Agency. https://www.food.gov.uk
