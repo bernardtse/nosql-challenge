@@ -10,7 +10,7 @@ UK Food Hygiene Rating Analysis
 
 
 ## 1. Overview
-The UK Food Standards Agency assesses food hygiene ratings for establishments across the United Kingdom. This project analyses data from the agency to help journalists at *Eat Safe, Love* identify key insights for articles. The analysis is carried out using MongoDB and Jupyter Notebooks, focusing on data manipulation, updates, and exploratory queries.
+The UK Food Standards Agency assesses food hygiene ratings for establishments across the United Kingdom. This challenge analyses data from the agency to help journalists at *Eat Safe, Love* identify key insights for articles. The analysis is carried out using MongoDB and Jupyter Notebooks, focusing on data manipulation, updates, and exploratory queries.
 
 ![MongoDB](images/mongodb.png)
 
