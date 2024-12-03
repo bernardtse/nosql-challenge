@@ -17,8 +17,8 @@ The UK Food Standards Agency assesses food hygiene ratings for establishments ac
 ## 2. Repository
 The repository includes:
 - **Data**: `resources/establishments.json` file containing the dataset.
-- **Setup Notebook**: [`NoSQL_setup.ipynb`](NoSQL_setup.ipynb) for database setup and data cleaning.
-- **Analysis Notebook**: [`NoSQL_analysis.ipynb`](NoSQL_analysis.ipynb) for exploratory data analysis.
+- **Setup Notebook**: [`nosql_setup.ipynb`](nosql_setup.ipynb) for database setup and data cleaning.
+- **Analysis Notebook**: [`nosql_analysis.ipynb`](nosql_analysis.ipynb) for exploratory data analysis.
 
 ## 3. Deployment
 
@@ -26,9 +26,9 @@ The repository includes:
 1. Ensure that the necessary Python libraries (`pymongo`, `pprint`, `pandas`) are installed on your system.
 2. Ensure that MongoDB is installed.
 3. Download the repository.
-4. Open and run the notebooks (`NoSQL_setup.ipynb` and `NoSQL_analysis.ipynb`) in Jupyter Notebook.
+4. Open and run the notebooks (`nosql_setup.ipynb` and `nosql_analysis.ipynb`) in Jupyter Notebook.
 
-### `NoSQL_setup.ipynb`
+### `nosql_setup.ipynb`
 #### Part 1: Database and Jupyter Notebook Set Up
 1. Import the data from the `establishments.json` file into MongoDB.
    - In the terminal, navigate to the folder that contains `establishment.json`. If the folder is `resources/`, type the following command:
@@ -46,12 +46,12 @@ The repository includes:
 2. Fill in missing `BusinessTypeID` data for *Penang Flavours*.
 3. Update the data types of specific fields (latitude, longitude, and RatingValue).
 
-### `NoSQL_analysis.ipynb`
+### `nosql_analysis.ipynb`
 #### Part 3: Exploratory Analysis
 Perform the data analysis to answer specific questions outlined in the next section.
 
 ## 4. Analysis
-The following questions were answered in the Analysis Notebook [`NoSQL_analysis.ipynb`](NoSQL_analysis.ipynb):
+The following questions were answered in the Analysis Notebook [`nosql_analysis.ipynb`](nosql_analysis.ipynb):
 
 1. Which establishments have a hygiene score equal to 20?
 
