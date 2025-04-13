@@ -74,4 +74,4 @@ The following questions were answered in the Analysis Notebook [`nosql_analysis.
 ## 5. Reference & Credits
 - **Dataset**: Provided by the UK Food Standards Agency. https://www.food.gov.uk
 - **MongoDB**: For database management and queries.
-- **Python Libraries**: Used PyMongo, Pretty Print, and Pandas for data manipulation and analysis.
+- **Python Libraries**: Used PyMongo, pprint, and pandas for data manipulation and analysis.
