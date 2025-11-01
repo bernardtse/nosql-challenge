@@ -16,9 +16,9 @@ The UK Food Standards Agency assesses food hygiene ratings for establishments ac
 
 ## 2. Repository
 The repository includes:
-- **Data**: `resources/establishments.json` file containing the dataset.
-- **Setup Notebook**: [`nosql_setup.ipynb`](nosql_setup.ipynb) for database setup and data cleaning.
-- **Analysis Notebook**: [`nosql_analysis.ipynb`](nosql_analysis.ipynb) for exploratory data analysis.
+- `resources/establishments.json` - JSON file containing the dataset
+- [`nosql_setup.ipynb`](nosql_setup.ipynb) - **Setup Notebook** for database setup and data cleaning
+- [`nosql_analysis.ipynb`](nosql_analysis.ipynb) - **Analysis Notebook** for exploratory data analysis
 
 ## 3. Deployment
 
